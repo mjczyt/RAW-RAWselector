@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-delectFile(__dirname + '/test', process.argv[2], process.argv[3]);
+delectFile(__dirname + '/photo', process.argv[2], process.argv[3]);
 function delectFile(path, saveType, delectType) {
     fs.readdir(path, 'utf8', function (err, fileArry) {
         if (err) {
